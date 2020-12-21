@@ -190,5 +190,13 @@ div {
 	.cornerTr {
 		top: -6%;
 	}
+	
+	.cornerBl {
+		visibility: hidden;
+	}
+
+	.cornerBr {
+		bottom: 3%;
+	}
 
 }
