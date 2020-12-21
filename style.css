@@ -5,6 +5,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	/*filter: blur(4px);*/
+	background-color: #bbbbbb;
+
 }
 
 div {
@@ -12,22 +14,23 @@ div {
 	justify-content: center;
 }
 
-.background {
+/*.background {
 	width: 100%;
 	height: 100%;
 	background-color: #bbbbbb;
 	padding: 3%;
-	/*background: url(img/fondo.png);*/
-}
+	/*background: url(img/fondo.png);
+}*/
 
 .container-all {
 	width: 40%;
-	height: 90%;
-	position: absolute;
-	background-color: white;
-	min-width: 470.874px;
-	min-height: 483.155px;
-	padding: 30px 0;
+  height: 90%;
+  position: absolute;
+  background-color: white;
+  min-width: 340px;
+  padding: 30px 0;
+  top: 0%;
+  margin: 2%;
 	-webkit-box-shadow: 0px 0px 7px 1px #737373;
 }
 
