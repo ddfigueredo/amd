@@ -1,0 +1,162 @@
+
+body {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/*filter: blur(4px);*/
+}
+
+div {
+	display: flex;
+	justify-content: center;
+}
+
+.background {
+	width: 100%;
+	height: 100%;
+	background-color: #bbbbbb;
+	padding: 3%;
+	/*background: url(img/fondo.png);*/
+}
+
+.container-all {
+	width: 40%;
+	height: 90%;
+	position: absolute;
+	background-color: white;
+	min-width: 470.874px;
+	min-height: 483.155px;
+	padding: 30px 0;
+	-webkit-box-shadow: 0px 0px 7px 1px #737373;
+}
+
+.cornerTr {
+	width: 30%;
+  height: 24%;
+	background-color: red;
+	background: url(img/left.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	animation-name: cornerleft;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.cornerBr {
+	width: 30%;
+  height: 24%;
+	background-color: red;
+	background: url(img/right.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	animation-name: cornerright;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.cornerBl {
+	width: 30%;
+  height: 12%;
+  background-color: red;
+  background: url(img/amd.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: 0;
+  left: -2%;
+  /*animation-name: corners;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;*/
+}
+
+.container-title {
+	width: 90%;
+	height: 25%;
+	background: url(img/redes.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	align-items: center;
+	position: relative;
+}
+
+.container-ig {
+  width: 90%;
+  height: 18%;
+  position: absolute;
+  background: url(img/ig2.png);
+  background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+  top: 25%;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+
+.container-fb {
+  width: 90%;
+  height: 18%;
+  position: absolute;
+  top: 50%;
+  background: url(img/fb2.png);
+  background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	transition: 0.2s linear;
+}
+
+.container-wp {
+  width: 90%;
+  height: 18%;
+  position: absolute;
+  top: 75%;
+  background: url(img/wp2.png);
+  background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+	transition: 0.2s linear;
+}
+
+.container-wp:hover {
+	height: 19%
+}
+
+.container-fb:hover {
+	height: 19%
+}
+
+
+.container-ig:hover {
+	height: 19%
+}
+
+@keyframes cornerright {
+	0% { height: 24%; width: 30% } 
+	50% { height: 26%; width: 32% }
+	100% { height: 24%; width: 30% } 
+}
+
+@keyframes cornerleft {
+	0% { height: 24%; width: 30% } 
+	50% { height: 27%; width: 34% }
+	100% { height: 24%; width: 30% } 
+}
+
+@keyframes title {
+	0% { height: 25% } 
+	50% { height: 26% }
+	100% { height: 25% } 
+}
+
