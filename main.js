@@ -7,6 +7,7 @@ window.onload = function() {
 	const logo = document.querySelector('.logotype')
 	const slider = document.querySelector('.slider')
 	const preloader = document.querySelector('.preloader')
+	const title = document.querySelector('.container-title')
 
 	ig.onclick = function() {
 		window.open ('https://www.instagram.com/amd.impresionesdigitales/')
@@ -26,6 +27,10 @@ window.onload = function() {
   		logo.classList.toggle('hide')
   		slider.classList.toggle('hide')
   		preloader.classList.toggle('hide')
+  		title.classList.toggle('ani-title')
+  		ig.classList.toggle('ani-ig')
+  		fb.classList.toggle('ani-fb')
+  		wp.classList.toggle('ani-wp')
 	}
 	
 	setTimeout(charge, 2500)
