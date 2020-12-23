@@ -6,21 +6,59 @@ body {
 	align-items: center;
 	/*filter: blur(4px);*/
 	background-color: #bbbbbb;
-
+	overflow-x: hidden;
 }
+
+
 
 div {
 	display: flex;
 	justify-content: center;
 }
 
-/*.background {
-	width: 100%;
-	height: 100%;
-	background-color: #bbbbbb;
-	padding: 3%;
-	/*background: url(img/fondo.png);
-}*/
+.hide {
+	visibility: hidden;
+	opacity: 0
+}
+
+
+
+.logotype {
+	width: 150px;
+	height: 106px; 
+	background: url(img/logo1.png);
+  background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation-name: logo;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	transition: 0.5s ease;
+	transform: scale(0.5);
+}
+
+@keyframes logo {
+	80% { transform: scale(1.3); opacity: 0}
+}
+
+.slider {
+	top: 0;
+	left: 0;
+	position: absolute;
+	height: 5px;
+	width: 50%;
+	background: black;
+	transition: 1s ease;
+	animation-name: slider;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	opacity: 0%;
+}
+
+@keyframes slider {
+	50% { opacity: 100%; }
+	100% { transform: translateX(200%); }
+}
 
 .container-all {
 	width: 40%;
@@ -32,6 +70,7 @@ div {
   top: 0%;
   margin: 2%;
 	-webkit-box-shadow: 0px 0px 7px 1px #737373;
+	transition: 1s linear;
 }
 
 .cornerTl {
@@ -258,7 +297,7 @@ div {
 	
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 400px) {
 	.container-all {
 		width: 100%;
 	  height: 100%;
