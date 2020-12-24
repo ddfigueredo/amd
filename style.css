@@ -16,17 +16,26 @@ div {
 	justify-content: center;
 }
 
+h1 {
+	font-family: 'Helvetica'
+}
+
 .hide {
 	visibility: hidden;
 	opacity: 0
 }
 
+.redes {
+	font-family: 'Helvetica';
+	font-weight: bold;
+}
 
 
-.logotype {
+
+/*.logotype {
 	width: 150px;
 	height: 106px; 
-	background: url(https://i.imgur.com/UCIiGHd.png);
+	background: url(img/logo1.png);
   background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -58,7 +67,7 @@ div {
 @keyframes slider {
 	50% { opacity: 100%; }
 	100% { transform: translateX(200%); }
-}
+}*/
 
 .container-all {
 	width: 40%;
@@ -77,7 +86,7 @@ div {
 	width: 150px;
   height: 150px;
 	background-color: red;
-	background: url(https://i.imgur.com/4IjVboP.png);
+	background: url(img/left.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -93,7 +102,7 @@ div {
 	width: 30%;
   height: 24%;
 	background-color: red;
-	background: url(https://i.imgur.com/14O4VQj.png);
+	background: url(img/right.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -109,7 +118,7 @@ div {
 	width: 150px;
   height: 84.69px;
   background-color: red;
-  background: url(https://i.imgur.com/pZvg4zP.png);
+  background: url(img/amd.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -124,26 +133,63 @@ div {
 .container-title {
 	width: 90%;
 	height: 25%;
-	background: url(https://i.imgur.com/WkXtPDM.png);
+	background: url(img/redes4.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+
 	align-items: center;
 	position: relative;
 	transition: 0.2s linear;
+}
+
+.underline {
+	width: 195px;
+  height: 3px;
+  position: absolute;
+  top: 40%;
+  right: 7%;
+  background-color: black;
+  transition: 0.2s linear;
+}
+
+.arrow {
+	width: 28px;
+	height: 28px;
+	background: red;
+	position: absolute;
+	background: url(img/arrow.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	top: 5%;
+	transition: 0.2s linear;
+}
+
+.arrow-ig {
+	right: 19%;
+}
+
+.arrow-fb {
+	right: 21%;
+}
+
+.arrow-wp {
+	right: 20%;
 }
 
 .container-ig {
   width: 90%;
   height: 18%;
   position: absolute;
-  background: url(https://i.imgur.com/OxJgq1u.png);
+  background: url(img/ig2.png);
   background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
   top: 25%;
   cursor: pointer;
   transition: 0.2s linear;
+  transform: scale(1);
 }
 
 .container-fb {
@@ -151,12 +197,13 @@ div {
   height: 18%;
   position: absolute;
   top: 50%;
-  background: url(https://i.imgur.com/xhDwbbv.png);
+  background: url(img/fb2.png);
   background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
 	transition: 0.2s linear;
+  transform: scale(1);
 }
 
 .container-wp {
@@ -164,45 +211,26 @@ div {
   height: 18%;
   position: absolute;
   top: 75%;
-  background: url(https://i.imgur.com/WUvG3Ct.png);
+  background: url(img/wp2.png);
   background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
 	transition: 0.2s linear;
-}
-
-.container-title:hover {
-	background: url(https://i.imgur.com/AyVyuaS.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.container-wp:hover {
-	height: 19%;
-	background: url(https://i.imgur.com/Ttgq640.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.container-fb:hover {
-	height: 19%;
-	background: url(https://i.imgur.com/sD8PNJN.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+  transform: scale(1);
 }
 
 
-.container-ig:hover {
-	height: 19%;
-	background: url(https://i.imgur.com/7YApXqQ.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+
+.container-wp:hover, .container-fb:hover, .container-ig:hover {
+	transform: scale(1.1);
 }
+
+.rotate {
+	top: 8%;
+  transform: rotate(-90deg);
+}
+
 
 @keyframes cornerright {
 	0% { height: 150px; width: 150px } 
@@ -223,36 +251,36 @@ div {
 }
 
 @keyframes redes {
-	0% { background: url(https://i.imgur.com/WkXtPDM.png);
+	0% { background: url(img/redes4.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center; } 
 
-	50% { background: url(https://i.imgur.com/AyVyuaS.png);
+	50% { background: url(img/redes.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	transform: scale(1.05); }
 
-	100% { background: url(https://i.imgur.com/WkXtPDM.png);
+	100% { background: url(img/redes4.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center; } 
 }
 
 @keyframes fb {
-	0% { background: url(https://i.imgur.com/xhDwbbv.png);
+	0% { background: url(img/fb2.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center; } 
 
-	50% { background: url(https://i.imgur.com/sD8PNJN.png);
+	50% { background: url(img/fb4.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	transform: scale(1.05); }
 
-	100% { background: url(https://i.imgur.com/xhDwbbv.png);
+	100% { background: url(img/fb2.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center; } 
@@ -260,18 +288,18 @@ div {
 }
 
 @keyframes wp {
-	0% { background: url(https://i.imgur.com/WUvG3Ct.png);
+	0% { background: url(img/wp2.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center; } 
 
-	50% { background: url(https://i.imgur.com/Ttgq640.png);
+	50% { background: url(img/wp4.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	transform: scale(1.05); }
 
-	100% { background: url(https://i.imgur.com/WUvG3Ct.png);
+	100% { background: url(img/wp2.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center; } 
@@ -279,25 +307,25 @@ div {
 }
 
 @keyframes ig {
-	0% { background: url(https://i.imgur.com/OxJgq1u.png);
+	0% { background: url(img/ig2.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center; } 
 
-	50% { background: url(https://i.imgur.com/7YApXqQ.png);
+	50% { background: url(img/ig4.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	transform: scale(1.05); }
 
-	100% { background: url(https://i.imgur.com/OxJgq1u.png);
+	100% { background: url(img/ig2.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center; }
 	
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 400px) {
 	.container-all {
 		width: 100%;
 	  height: 100%;
@@ -313,7 +341,7 @@ div {
 	.container-title {
 	width: 90%;
 	height: 25%;
-	background: url(https://i.imgur.com/WkXtPDM.png);
+	background: url(img/redes4.png);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -353,7 +381,7 @@ div {
   width: 90%;
   height: 18%;
   position: absolute;
-  background: url(https://i.imgur.com/OxJgq1u.png);
+  background: url(img/ig2.png);
   background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -367,7 +395,7 @@ div {
   height: 18%;
   position: absolute;
   top: 50%;
-  background: url(https://i.imgur.com/xhDwbbv.png);
+  background: url(img/fb2.png);
   background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -380,7 +408,7 @@ div {
   height: 18%;
   position: absolute;
   top: 75%;
-  background: url(https://i.imgur.com/WUvG3Ct.png);
+  background: url(img/wp2.png);
   background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
