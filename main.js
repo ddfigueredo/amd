@@ -71,7 +71,7 @@ window.onload = function() {
   		wp.classList.toggle('ani-wp')
 	}
 	
-	//setTimeout(charge, 2500)
+	setTimeout(charge, 2500)
   	
   
 }
