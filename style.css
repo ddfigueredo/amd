@@ -32,7 +32,7 @@ h1 {
 
 
 
-/*.logotype {
+.logotype {
 	width: 150px;
 	height: 106px; 
 	background: url(img/logo1.png);
@@ -67,7 +67,7 @@ h1 {
 @keyframes slider {
 	50% { opacity: 100%; }
 	100% { transform: translateX(200%); }
-}*/
+}
 
 .container-all {
 	width: 40%;
